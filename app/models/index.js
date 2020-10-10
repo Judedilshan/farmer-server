@@ -20,5 +20,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.farmer = require("./farmer.model.js")(sequelize, Sequelize); 
+db.farm = require("./farm.model.js")(sequelize, Sequelize); 
 
 module.exports = db;

@@ -1,23 +1,22 @@
 module.exports = (sequelize, Sequelize) => {
-  const Farmer = sequelize.define("farmer", {
+  const Farm = sequelize.define("farm", {
+ 
+    farmName: {
    
-    farmerName: {     
+      type: Sequelize.STRING,
+    },
+    farmId: {
       type: Sequelize.STRING,
     },
     contact: {
       type: Sequelize.STRING,
     },
-    address: {
-        type: Sequelize.STRING,
-      },
-    email: {
-        type: Sequelize.STRING,
-      },
+    
     validity: {
       type: Sequelize.BOOLEAN,
     },
   });
 
-  return Farmer;
+  return Farm;
 };
   

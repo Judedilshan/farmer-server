@@ -24,5 +24,5 @@ module.exports = (app) => {
   // Delete all farmers
   router.delete("/", farmer.deleteAll);
 
-  app.use("/api/farmer-management/farmers", router); //url- necessary for client side
+  app.use("/api/farmer-management/farmers", router); //necessary for client side
 };
